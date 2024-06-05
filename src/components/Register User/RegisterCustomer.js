@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const RegisterCustomer = () => {
   const [customerName, setCustomerName] = useState("");
@@ -17,6 +19,11 @@ const RegisterCustomer = () => {
       })
       .then((response) => {
         console.log("Customer registered successfully!", response.data);
+        console.log("Customer registered successfully!", response.data);
+        toast.success("Customer registered successfully!"); // Show success toast
+        setCustomerName("");
+        setMobile("");
+        setEmailID("");
       })
       .catch((error) => {
         console.error("There was an error registering the customer!", error);
@@ -57,6 +64,7 @@ const RegisterCustomer = () => {
           Register
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 };

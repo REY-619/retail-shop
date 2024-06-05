@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import ProductList from "./ProductList";
-import ProductAdd from "./ProductAdd";
-import OrderProduct from "./OrderProduct";
-import RegisterCustomer from "./RegisterCustomer";
+import ProductList from "./components/Product listing/ProductList";
+import ProductAdd from "./components/Add Product/ProductAdd";
+import OrderProduct from "./components/Order product/OrderProduct";
+import RegisterCustomer from "./components/Register User/RegisterCustomer";
 
 function App() {
   return (
