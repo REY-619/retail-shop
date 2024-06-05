@@ -25,7 +25,7 @@ const ProductList = () => {
   useEffect(() => {
     const getProducts = async () => {
       const response = await axios.get(
-        "https://uiexercise.theproindia.com/api/Product/GetAllProduct"
+        "https://cors-anywhere.herokuapp.com/https://uiexercise.theproindia.com/api/Product/GetAllProduct"
       );
       console.log(response, "checkk items");
       setProducts(response.data);
