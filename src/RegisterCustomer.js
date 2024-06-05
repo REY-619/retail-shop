@@ -25,7 +25,7 @@ const RegisterCustomer = () => {
 
   return (
     <div className="container">
-      <h2>Register Customer</h2>
+      <h2 className="register">Register Customer</h2>
       <form onSubmit={handleSubmit} className="form-container">
         <div className="addproducts">
           <div className="form-group">
